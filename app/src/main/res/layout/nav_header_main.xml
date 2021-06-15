@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+  </data>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorHeaderBg"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingTop="40dp"
+    android:paddingRight="40dp"
+    android:paddingBottom="40dp">
+
+    <com.suke.widget.SwitchButton
+      android:layout_gravity="end"
+      android:id="@+id/switch_button"
+      app:sb_show_indicator="false"
+      android:onClick="click"
+      android:layout_width="45dp"
+      android:layout_height="25dp" />
+
+    <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:onClick="click"
+      android:contentDescription="@string/app_name"
+      app:srcCompat="@drawable/ic_logo" />
+
+    <TextView
+      android:id="@+id/tv_nike_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="8dp"
+      android:text="未登录"
+      android:textColor="@color/colorHeaderTextColor"
+      android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:textColor="@color/colorHeaderTextColor"
+      android:text="点击登录" />
+
+  </LinearLayout>
+</layout>

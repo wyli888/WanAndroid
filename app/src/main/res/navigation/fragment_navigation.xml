@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.e.wanandroid.ui.fragment.HomeFragment"
+        android:label="首页"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_public"
+        android:name="com.e.wanandroid.ui.fragment.PublicFragment"
+        android:label="公众号"
+        tools:layout="@layout/fragment_public" />
+
+
+    <fragment
+        android:id="@+id/nav_square"
+        android:name="com.e.wanandroid.ui.fragment.SquareFragment"
+        android:label="广场"
+        tools:layout="@layout/fragment_square" />
+
+    <fragment
+        android:id="@+id/nav_community"
+        android:name="com.e.wanandroid.ui.fragment.CommunityFragment"
+        android:label="社区"
+        tools:layout="@layout/fragment_community" />
+
+    <fragment
+        android:id="@+id/nav_sort"
+        android:name="com.e.wanandroid.ui.fragment.SortFragment"
+        android:label="分类"
+        tools:layout="@layout/fragment_sort" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_about"-->
+<!--        android:name="com.example.myapplication.ui.nav.about.AboutFragment"-->
+<!--        android:label="@string/menu_about"-->
+<!--        tools:layout="@layout/fragment_about" />-->
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_update"-->
+<!--        android:name="com.example.myapplication.ui.nav.update.UpdateFragment"-->
+<!--        android:label="@string/menu_update"-->
+<!--        tools:layout="@layout/update_fragment" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_dashboard"-->
+<!--        android:name="com.example.myapplication.ui.bottom.wechat.WeChatFragment"-->
+<!--        android:label="@string/title_dashboard"-->
+<!--        tools:layout="@layout/fragment_view_pager" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_notifications"-->
+<!--        android:name="com.example.myapplication.ui.bottom.system.SystemFragment"-->
+<!--        android:label="@string/title_notifications"-->
+<!--        tools:layout="@layout/fragment_notifications" />-->
+
+<!--    &lt;!&ndash;    体系详情&ndash;&gt;-->
+<!--    <fragment-->
+<!--        android:id="@+id/systemChildrenFragment"-->
+<!--        android:name="com.example.myapplication.ui.bottom.system.systemchildren.SystemChildrenFragment"-->
+<!--        android:label="SystemChildrenFragment" />-->
+
+<!--    &lt;!&ndash;    导航&ndash;&gt;-->
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_navigation"-->
+<!--        android:name="com.example.myapplication.ui.bottom.navi.NavigationFragment"-->
+<!--        android:label="@string/title_navigation" />-->
+
+
+<!--    &lt;!&ndash;    我的&ndash;&gt;-->
+<!--    <fragment-->
+<!--        android:id="@+id/mineFragment"-->
+<!--        android:name="com.example.myapplication.ui.nav.mine.MineFragment"-->
+<!--        android:label="@string/mine" />-->
+
+<!--    &lt;!&ndash;    待办清单&ndash;&gt;-->
+<!--    <fragment-->
+<!--        android:id="@+id/toDoFragment"-->
+<!--        android:name="com.example.myapplication.ui.nav.todo.ToDoFragment"-->
+<!--        android:label="ToDoFragment" />-->
+
+<!--    &lt;!&ndash;    待办清单详情&ndash;&gt;-->
+<!--    <fragment-->
+<!--        android:id="@+id/toDoContentFragment"-->
+<!--        android:name="com.example.myapplication.ui.nav.todo.todocontent.ToDoContentFragment"-->
+<!--        android:label="ToDoContentFragment" />-->
+
+<!--    &lt;!&ndash;    新增待办事项&ndash;&gt;-->
+<!--    <fragment-->
+<!--        android:id="@+id/addToDoFragment"-->
+<!--        android:name="com.example.myapplication.ui.nav.todo.addtodo.AddToDoFragment"-->
+<!--        android:label="@string/add_todo_title" />-->
+
+<!--    &lt;!&ndash;    积分详情列表&ndash;&gt;-->
+<!--    <fragment-->
+<!--        android:id="@+id/coinListFragment"-->
+<!--        android:name="com.example.myapplication.ui.nav.mine.coin.CoinListFragment"-->
+<!--        android:label="@string/integral_details" />-->
+
+<!--    &lt;!&ndash;    积分排行榜&ndash;&gt;-->
+<!--    <fragment-->
+<!--        android:id="@+id/coinRankListFragment"-->
+<!--        android:name="com.example.myapplication.ui.nav.mine.coinrank.CoinRankListFragment"-->
+<!--        android:label="@string/integral_ranking" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_project"-->
+<!--        android:name="com.example.myapplication.ui.bottom.project.ProjectFragment"-->
+<!--        android:label="@string/title_project" />-->
+
+
+</navigation>

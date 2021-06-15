@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#7D141A31</color>
+  <color name="colorPrimaryDark">#081029</color>
+  <color name="colorAccent">#0097FB</color>
+  <color name="colorAccent4D">#4D0097FB</color>
+  <color name="colorWhite">#FFFFFF</color>
+  <color name="colorBlack">#000000</color>
+  <color name="colorPrimaryLight">#1E2746</color>
+  <color name="colorTextPrimary">#CBD5ED</color>
+  <color name="colorTextSecondary">#4A5B82</color>
+  <color name="colorTextYellow">#FAD303</color>
+  <color name="colorThemeExtra">#FF5252</color>
+  <color name="colorTransparent">#00000000</color>
+  <color name="colorGreen">#047604</color>
+
+  <color name="colorTextColor">#FFFFFF</color>
+  <color name="colorHeaderBg">#081029</color>
+  <color name="colorHeaderTextColor">#FFFFFF</color>
+  <color name="colorBottomNavigationBg">#081029</color>
+  <color name="colorFragmentBg">#1D2F46</color>
+  <color name="colorStatusBarBg">#081029</color>
+  <color name="colorMenuIcon">#6DBD0803</color>
+</resources>

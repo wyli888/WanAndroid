@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_hot"
+            android:title="首页" />
+        <item
+            android:id="@+id/nav_collect"
+            android:icon="@drawable/ic_hot"
+            android:title="哈哈" />
+        <item
+            android:id="@+id/toDoFragment"
+            android:icon="@drawable/ic_hot"
+            android:title="代办" />
+    </group>
+
+
+    <item android:title="猩猩">
+
+        <menu>
+            <item
+                android:id="@+id/nav_square"
+                android:icon="@drawable/ic_hot"
+                android:title="骗人" />
+
+            <item
+                android:id="@+id/nav_qa"
+                android:icon="@drawable/ic_hot"
+                android:title="耀眼" />
+        </menu>
+    </item>
+
+    <item android:title="干啥呢">
+        <menu>
+            <item
+                android:id="@+id/nav_update"
+                android:icon="@drawable/ic_hot"
+                android:title="一天天的" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_hot"
+                android:title="烦人" />
+        </menu>
+    </item>
+
+</menu>

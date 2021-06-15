@@ -1,0 +1,119 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.e.wanandroid"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField 'Boolean', 'IS_DEBUG', 'true'
+        }
+        release {
+            minifyEnabled false
+            buildConfigField 'Boolean', 'IS_DEBUG', 'false'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        dataBinding true
+        // for view binding:
+        // viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // navigation
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+
+    // lifecycle
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "android.arch.lifecycle:common-java8:1.1.1"
+
+    // retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // okHttp logger
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+
+    //    RxJava
+//    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+//    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+
+    // 引入RxBinding (我这里用作防止过快点击) 包含了rxjava
+    implementation 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
+
+    //    glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //glide 高斯模糊
+    implementation 'jp.wasabeef:glide-transformations:4.1.0'
+
+    //banner
+    implementation 'com.github.pinguo-zhouwei:MZBannerView:v2.0.0'
+
+    //下拉刷新
+    implementation 'com.scwang.smart:refresh-layout-kernel:2.0.0-alpha-1'      //核心必须依赖
+    implementation 'com.scwang.smart:refresh-header-classics:2.0.0-alpha-1'
+
+    //agentweb (WebView)
+    implementation 'com.just.agentweb:agentweb:4.1.2'
+
+    //hawk数据存储
+    implementation "com.orhanobut:hawk:2.0.1"
+
+    //PopTabView 条件筛选view
+    implementation 'me.ccj.PopsTabView:poptabview_lib:1.5.0'
+
+    // 流式布局
+    implementation 'com.google.android:flexbox:2.0.1'
+    //竖向TabLayout
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'
+
+    //图片/视频选择、预览、编辑与拍照
+    implementation 'com.github.guoxiaoxing:phoenix:1.0.15'
+    //选填 - 图片压缩，开启功能：Phoenix.with().enableCompress(true)，获取结果：MediaEntity.getCompressPath()
+    implementation 'com.github.guoxiaoxing:phoenix-compress-picture:1.0.15'
+
+    // toast
+    implementation 'com.hjq:toast:8.8'
+
+    // 屏幕适配方案
+    implementation 'me.jessyan:autosize:1.2.1'
+
+    // switch button
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+
+    // Lottie 动画
+    implementation 'com.airbnb.android:lottie:3.6.0'
+
+    // banner
+    implementation 'com.youth.banner:banner:2.1.0'
+}

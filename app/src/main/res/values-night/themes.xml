@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!-- Base application theme. -->
+  <style name="Theme.WanAndroid" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor" tools:targetApi="l">@color/colorStatusBarBg</item>
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/colorAccent</item>
+    <item name="colorPrimaryVariant">@color/colorPrimary</item>
+    <item name="colorOnPrimary">@color/colorBottomNavigationBg</item>
+
+  </style>
+
+  <style name="launch_theme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    <item name="windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowBackground">@color/colorPrimaryDark</item>
+<!--    <item name="android:windowContentOverlay">@null</item>-->
+  </style>
+
+  <style name="ThemeTransitionAnimation">
+    <item name="android:windowEnterAnimation">@anim/fade_in</item>
+    <item name="android:windowExitAnimation">@anim/fade_out</item>
+  </style>
+</resources>
