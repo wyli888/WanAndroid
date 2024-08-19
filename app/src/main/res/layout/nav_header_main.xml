@@ -3,6 +3,9 @@
   xmlns:app="http://schemas.android.com/apk/res-auto">
 
   <data>
+    <variable
+      name="viewModel"
+      type="com.e.wanandroid.viewmodel.MainViewModel" />
 
   </data>
 
@@ -29,7 +32,6 @@
       android:id="@+id/imageView"
       android:layout_width="50dp"
       android:layout_height="50dp"
-      android:onClick="click"
       android:contentDescription="@string/app_name"
       app:srcCompat="@drawable/ic_logo" />
 

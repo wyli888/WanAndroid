@@ -1,10 +1,8 @@
 package com.e.wanandroid.ui.splash;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.viewpager2.widget.ViewPager2;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
 import com.e.wanandroid.MainActivity;
 import com.e.wanandroid.R;
 import com.e.wanandroid.base.BaseActivity;
@@ -27,7 +24,7 @@ import java.util.List;
 public class SplashActivity extends BaseActivity<ActivitySplashBinding, SplashViewModel> {
   private final String TAG = "SplashActivity==";
   private OnBoardAdapter onboardAdapter;
-  private static final int SPLASH_TIME_OUT = 1000;
+  private static final int SPLASH_TIME_OUT = 800;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

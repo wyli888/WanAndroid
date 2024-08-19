@@ -19,7 +19,7 @@
       android:id="@+id/animationView"
       android:layout_width="300dp"
       android:layout_height="300dp"
-      app:lottie_rawRes="@raw/travel"
+      app:lottie_rawRes="@raw/start_tips_one"
       android:layout_gravity="center"
       app:lottie_autoPlay="true"
       app:lottie_loop="true"/>

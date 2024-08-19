@@ -5,6 +5,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.annotation.NonNull;
@@ -19,6 +20,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.e.wanandroid.base.BaseActivity;
 import com.e.wanandroid.databinding.ActivityMainBinding;
 import com.e.wanandroid.manager.MyActivityManager;
+import com.e.wanandroid.ui.login.LoginActivity;
 import com.e.wanandroid.utils.SharePreferenceUtil;
 import com.e.wanandroid.utils.ThemeManager;
 import com.e.wanandroid.viewmodel.MainViewModel;
@@ -73,6 +75,22 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
         }
       }
     });
+   binding.navView.getHeaderView(0).findViewById(R.id.imageView).setOnClickListener(new View.OnClickListener() {
+     @Override
+     public void onClick(View v) {
+       ToastUtils.show("hahah");
+       Intent home = new Intent(getApplicationContext(), LoginActivity.class);
+       startActivity(home);
+     }
+   });
+   binding.navView.getMenu().findItem(R.id.nav_home).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+     @Override
+     public boolean onMenuItemClick(MenuItem item) {
+
+       ToastUtils.show("nihao");
+       return false;
+     }
+   });
   }
   // 在AndroidManifest.xml 中加入 android:configChanges="uiMode" 当主题改变是不会重启Activity
   // AppCompatDelegate.setDefaultNightMode()这个方法会调用recreate()方法重启当前的activity 但是会有闪屏
@@ -94,4 +112,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
   protected boolean isSupportLoad() {
     return true;
   }
+
+
+
 }

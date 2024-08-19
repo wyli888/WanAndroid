@@ -1,5 +1,6 @@
 package com.e.wanandroid.base;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -122,6 +123,29 @@ public abstract class BaseActivity<DB extends ViewDataBinding, VM extends BaseVi
    */
   protected void handleIntent(Intent intent) {
 
+  }
+
+  /**
+   * 跳转页面
+   *
+   * @param clz 所跳转的目的Activity类
+   */
+  public void startActivity(Class<?> clz) {
+    startActivity(new Intent(this, clz));
+  }
+
+  /**
+   * 跳转页面
+   *
+   * @param clz    所跳转的目的Activity类
+   * @param bundle 跳转所携带的信息
+   */
+  public void startActivity(Class<?> clz, Bundle bundle) {
+    Intent intent = new Intent(this, clz);
+    if (bundle != null) {
+      intent.putExtras(bundle);
+    }
+    startActivity(intent);
   }
 
 

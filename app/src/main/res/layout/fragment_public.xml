@@ -3,6 +3,12 @@
   xmlns:tools="http://schemas.android.com/tools">
 
   <data>
+    <variable
+      name="viewModel"
+      type="com.e.wanandroid.viewmodel.PublicViewModel" />
+    <variable
+      name="view"
+      type="android.view.View" />
 
   </data>
 
@@ -11,10 +17,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragment.PublicFragment">
 
-    <TextView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:text="公众号" />
+
+
+    <Button
+      android:id="@+id/clickBtn"
+      android:layout_width="200dp"
+      android:text="点击"
+      android:layout_gravity="center"
+      android:onClick="@{(view)->viewModel.click(view)}"
+      android:layout_height="wrap_content">
+
+    </Button>
 
   </FrameLayout>
 </layout>

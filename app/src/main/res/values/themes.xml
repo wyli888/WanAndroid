@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
   <!-- Base application theme. -->
-  <style name="Theme.WanAndroid" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+  <!-- 如果名称是Theme.WanAndroid 就相当于是集成了Theme的style 会导致退出app时是下滑退出样式 -->
+  <style name="WanAndroid" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
     <!-- Status bar color. 状态栏的颜色-->
     <item name="android:statusBarColor" tools:targetApi="l">@color/colorStatusBarBg</item>
     <!-- Primary brand color. -->
@@ -9,10 +10,12 @@
     <item name="colorOnPrimary">@color/colorBottomNavigationBg</item>
   </style>
 
-  <style name="launch_theme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+  <style name="LunchTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
     <item name="windowNoTitle">true</item>
     <item name="android:windowFullscreen">true</item>
-    <item name="android:windowBackground">@color/colorPrimaryDark</item>
+    <item name="android:windowBackground">@color/colorWhite</item>
+<!--    <item name="android:windowContentOverlay">@null</item>-->
+
   </style>
 
   <style name="ThemeTransitionAnimation">

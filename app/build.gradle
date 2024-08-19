@@ -32,8 +32,6 @@ android {
     }
     buildFeatures {
         dataBinding true
-        // for view binding:
-        // viewBinding true
     }
 }
 
@@ -61,10 +59,6 @@ dependencies {
 
     // okHttp logger
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
-
-    //    RxJava
-//    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
-//    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
 
     // 引入RxBinding (我这里用作防止过快点击) 包含了rxjava
     implementation 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
@@ -116,4 +110,8 @@ dependencies {
 
     // banner
     implementation 'com.youth.banner:banner:2.1.0'
+
+    // card view
+    implementation "androidx.cardview:cardview:1.0.0"
+
 }
